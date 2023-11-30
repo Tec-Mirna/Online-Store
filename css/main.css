@@ -10,3 +10,7 @@ body{
     color: rgb(233, 63, 25);
    margin-left: 67px;
 }
+.img-fluid:hover{
+    transform: scale(1.1); /* Ejemplo: aumenta el tamaño al 110% */
+   
+}
