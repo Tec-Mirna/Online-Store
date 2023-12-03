@@ -167,6 +167,8 @@ document.querySelector('#app').innerHTML = `
 
 
 
+
+
 `
 
 
@@ -190,6 +192,8 @@ document.getElementById('showLoginForm').addEventListener('click', function() {
 document.addEventListener("DOMContentLoaded", () => {
    /* Con querySelectorAll Se seleccionan todos los botones que contienen la clase soldBtn  */
     let soldButton = document.querySelectorAll("#soldBtn");
+    /* Con querySelector Se selecciona el boton con el id  lightBtn */
+    let lightBtn = document.querySelector("#lightBtn");
   
     // Agrega un evento de clic al botón
     /* Todos los botones muestran la misma alerta */
@@ -232,8 +236,49 @@ document.addEventListener("DOMContentLoaded", () => {
               changeButton(button, true)
               }
             })
+
+                // Agrega un evento de clic al botón lightBtn
+                let darkMode=false
+
+                lightBtn.addEventListener("click", () => {
+                    if(darkMode){
+                        changeButtonLightMode(lightBtn, true)
+                        darkMode=false
+                    }
+                    else{
+                        changeButtonLightMode(lightBtn, false) 
+                        darkMode=true
+                    }
+                }) 
         });
 
     });
+
+
+
+        //Función para cambiar el texto y el color al boton al hacer clic
+        function changeButton(button, added) {
+ 
+           button.innerHTML = added ? "Añadido al carrito" : "Añadir al carrito"
+           button.classList.toggle('btn-outline-success', !added);
+           button.classList.toggle('btn-danger', added);
+              
+        }
+  
+           //Función para boton modo oscuro/claro
+    function changeButtonLightMode(button, darkMode) {
+        let body = document.body
+
+        if(darkMode){
+            button.innerHTML = "Modo Oscuro"
+            button.classList.replace('btn-light', 'btn-dark');
+            body.style.backgroundColor = '#FFFFFF'
+        }else{
+            button.innerHTML = "Modo claro"
+            button.classList.replace('btn-dark', 'btn-light');
+            body.style.backgroundColor = '#000000 '
+        }       
+        
+    }
 
 

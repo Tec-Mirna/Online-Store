@@ -16,7 +16,7 @@ body{
    
 }
 .custom-bg{
-    background-color: #c4d5ec !important; /* Puedes cambiar el color a tu preferencia */
+    background-color: #c4d5ec !important; 
     color: white; /* Color del texto */
     border-radius: 15px; /* Bordes redondeados para la tarjeta */
     padding: 20px; /* Añadir espaciado interno */
@@ -26,13 +26,9 @@ body{
     background-color: rgb(43, 120, 209) !important;
     border: rgb(19, 20, 20);
     border-radius: 8px;
-
    width: 200px; /* Ajusta el ancho a tu preferencia */
    height: 40px;
-  padding: 10px; 
-
-
-  
+  padding: 10px;  
 }
 
 
