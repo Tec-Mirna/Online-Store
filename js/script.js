@@ -2,12 +2,64 @@
 
 
 document.querySelector('#app').innerHTML = `
+<header class="todo-header">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="logo" href="#">TECno-PcMania</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ofertas 🔥</a>
+        </li>
+        <li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordenadores 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+            <li><a class="dropdown-item" href="#">HP</a></li>
+            <li><a class="dropdown-item" href="#">Samsung</a></li>
+            <li><a class="dropdown-item" href="#">Asus</a></li>
+            <li><a class="dropdown-item" href="#">Accer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Otras MARCAS</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="boton-header" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container" id="container">
 
 
 
 
-<section class="card mb-11 mx-auto" style="max-width: 800px;">
+<section class="card mb-11 mx-auto" style="max-width: 990px;">
   <div class="row">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701201932/2_goiu6v.webp" class="img-fluid  ">
@@ -32,7 +84,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-<section class="card mb-11 mx-auto" style="max-width: 800px;">
+<section class="card mb-11 mx-auto" style="max-width: 990px;">
   <div class="row">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701397317/3_oh5e3u.webp" class="img-fluid  ">
@@ -57,7 +109,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-<section class="card mb-11 mx-auto cards" style="max-width: 800px;">
+<section class="card mb-11 mx-auto cards" style="max-width: 990px;">
   <div class="row ">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701202202/1_vcqitj.webp" class="img-fluid  ">
@@ -82,7 +134,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-<section class="card mb-11 mx-auto cards" style="max-width: 800px;">
+<section class="card mb-11 mx-auto cards" style="max-width: 990px;">
   <div class="row ">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701397864/4_ixo4ri.webp" class="img-fluid  ">
@@ -107,7 +159,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-<section class="card mb-11 mx-auto cards" style="max-width: 800px;">
+<section class="card mb-11 mx-auto cards" style="max-width: 990px;">
   <div class="row ">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701399857/6_tu5j10.webp" class="img-fluid  ">
@@ -132,7 +184,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-<section class="card mb-11 mx-auto cards" style="max-width: 800px;">
+<section class="card mb-11 mx-auto cards" style="max-width: 990px;">
   <div class="row ">
     <div class="col-md-4 ">
       <img src="https://res.cloudinary.com/dzb6jy2uq/image/upload/v1701400551/5_trviva.webp" class="img-fluid  ">
@@ -158,6 +210,45 @@ document.querySelector('#app').innerHTML = `
 </section>
 
 
+
+<footer>
+  <div class="footer">
+    <div class="contact-section">
+      <h3>Contactanos</h3><br>
+      <p>Dirección: Calle Principal, Ciudad</p>
+      <p>Email: info@tupaginaweb.com</p>
+      <p>Teléfono: (123) 456-7890</p>
+    </div>
+
+    <div class="social-section">
+      <h3>Redes Sociales</h3>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/"><img width="30px" height="30px" alt="Facebook" title="Facebook"
+              src="https://siman.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/ebd4bd10e66138168eb6a582e00790ea.svg" /></a>
+        </li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img width="30px" height="30px"
+              alt="Twitter" title="Twitter"
+              src="https://siman.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/5f12d2a63f43d3a243550ff6400b4870.svg" /></a>
+        </li>
+        <li><a href="https://instagram.com/" target="_blank"><img width="30px" height="30px" alt="Instagram"
+              title="Instagram"
+              src="https://siman.vtexassets.com/_v/public/assets/v1/published/vtex.store-footer@2.27.0/public/react/6a61a302319c062aceb9562a66381a63.svg" /></a>
+        </li>
+        <br />
+      </ul>
+      <br />
+      <h3>Quiénes Somos</h3>
+      <p>Somos una empresa dedicada a la venta de computadoras y tecnología. Ofrecemos productos de alta calidad y
+        brindamos el mejor servicio a nuestros clientes.</p>
+    </div>
+
+  </div>
+  <div class="footerweb">
+  
+    <br>
+    <p>&copy; 2023 Tu Página Web. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 
 `
@@ -261,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let body = document.body
 
         if(darkMode){
-            button.innerHTML = "Modo Oscuro🐦"
+            button.innerHTML = "Modo Oscuro"
             button.classList.replace('btn-light', 'btn-dark');
             body.style.backgroundColor = '#FFFFFF'
         }else{

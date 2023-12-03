@@ -2,10 +2,7 @@
     margin-bottom: 20px; 
 
 }
-body{
-    padding: 30px;
- 
-}
+
 
 .precio{
     color: rgb(233, 63, 25);
@@ -36,17 +33,21 @@ body{
 .footer {
     background-color: rgb(16, 46, 130);
     color: #fff;
-    padding: 20px;
+  
+    width: 100% !important;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  
     text-align: center;
+    
+   
 }
 
 .footerweb{
     background-color: rgb(16, 46, 130);
     color: #fff;
-    padding: 20px;
+    
+    width: 100%;
     text-align: center;
 
 }
@@ -81,4 +82,65 @@ body{
     right: 20px; 
     z-index: 999;
   }
+
+
+
+
+   /* Header */ 
+   :root{
+    --azul: rgb(16,46,130);
+    --blanco: white;
+    --negro: black;
+    --azul1: rgb(24, 54, 137);
+}
+
+.navbar-brand{
+    font-size: 8rem;
+}
+
+.todo-header{
+    background-image: url(https://res.cloudinary.com/dtlgcfflw/image/upload/v1701471246/primer-plano-aparatos-plantas-decoracion_q0mjxe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    min-height: 30rem;
+    width: 0 auto;
+    margin-bottom: 5rem;
+    border-bottom: solid .5rem var(--negro);
+   
+}
+
+.navbar{
+    background-color: var(--azul);
+    border-bottom: solid .2rem var(--negro);
+}
+
+.logo{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--blanco);
+    border: solid .3rem var(--blanco);
+    border-top-right-radius: 1rem;
+    background-color: var(--azul1);
+    padding: .2rem;
+}
+
+.boton-header{
+    background-color: var(--azul);
+    font-weight: 700;
+    color: var(--blanco);
+    border: solid .15rem var(--blanco);
+    border-radius: .4rem;
+}
+
+.boton-header:hover{
+    background-color: var(--blanco);
+    color: var(--azul);
+    transition: .15s;
+}
+
+.nav-link{
+    color: var(--blanco) !important;
+}
 
