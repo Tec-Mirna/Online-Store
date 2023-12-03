@@ -14,3 +14,45 @@ body{
     transform: scale(1.1); /* Ejemplo: aumenta el tamaño al 110% */
    
 }
+
+.footer {
+    background-color: rgb(16, 46, 130);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footerweb{
+    background-color: rgb(16, 46, 130);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.contact-section,
+.social-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}

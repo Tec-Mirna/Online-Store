@@ -157,7 +157,6 @@ document.querySelector('#app').innerHTML = `
   </div>
 </section>
 
-
 `
 
 
@@ -165,6 +164,8 @@ document.querySelector('#app').innerHTML = `
 document.addEventListener("DOMContentLoaded", () => {
    /* Con querySelectorAll Se seleccionan todos los botones que contienen la clase soldBtn  */
     let soldButton = document.querySelectorAll("#soldBtn");
+    /* Con querySelector Se selecciona el boton con el id  lightBtn */
+    let lightBtn = document.querySelector("#lightBtn");
   
     // Agrega un evento de clic al botón
     /* Todos los botones muestran la misma alerta */
@@ -207,7 +208,22 @@ document.addEventListener("DOMContentLoaded", () => {
               changeButton(button, true)
               }
             })
+
+                // Agrega un evento de clic al botón lightBtn
+                let darkMode=false
+
+                lightBtn.addEventListener("click", () => {
+                    if(darkMode){
+                        changeButtonLightMode(lightBtn, true)
+                        darkMode=false
+                    }
+                    else{
+                        changeButtonLightMode(lightBtn, false) 
+                        darkMode=true
+                    }
+                }) 
         });
+
         //Función para cambiar el texto y el color al boton al hacer clic
         function changeButton(button, added) {
  
@@ -216,8 +232,23 @@ document.addEventListener("DOMContentLoaded", () => {
            button.classList.toggle('btn-danger', added);
               
         }
+  
+           //Función para boton modo oscuro/claro
+    function changeButtonLightMode(button, darkMode) {
+        let app = document.querySelector('#app')
+
+        if(darkMode){
+            button.innerHTML = "Modo Oscuro"
+            button.classList.replace('btn-light', 'btn-dark');
+            
+        }else{
+            button.innerHTML = "Modo claro"
+            button.classList.replace('btn-dark', 'btn-light');
+        }
+        
+        
+        
+    }
+
 
     });
-      
-  
-  
