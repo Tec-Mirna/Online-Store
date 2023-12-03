@@ -235,15 +235,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
            //Función para boton modo oscuro/claro
     function changeButtonLightMode(button, darkMode) {
-        let app = document.querySelector('#app')
+        let body = document.body
 
         if(darkMode){
             button.innerHTML = "Modo Oscuro"
             button.classList.replace('btn-light', 'btn-dark');
-            
+            body.style.backgroundColor = '#FFFFFF'
         }else{
             button.innerHTML = "Modo claro"
             button.classList.replace('btn-dark', 'btn-light');
+            body.style.backgroundColor = '#000000 '
         }
         
         
