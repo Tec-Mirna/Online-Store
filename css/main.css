@@ -15,22 +15,70 @@ body{
     transform: scale(1.1); /* Ejemplo: aumenta el tamaño al 110% */
    
 }
+/*   Formulario
 .custom-bg{
     background-color: #c4d5ec !important; 
-    color: white; /* Color del texto */
-    border-radius: 15px; /* Bordes redondeados para la tarjeta */
-    padding: 20px; /* Añadir espaciado interno */
+    color: white;
+    border-radius: 15px; 
+    padding: 20px; 
   }
   
 .boton{
     background-color: rgb(43, 120, 209) !important;
     border: rgb(19, 20, 20);
     border-radius: 8px;
-   width: 200px; /* Ajusta el ancho a tu preferencia */
+   width: 200px; 
    height: 40px;
   padding: 10px;  
+} */
+
+/* Melissa */
+.footer {
+    background-color: rgb(16, 46, 130);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
 
+.footerweb{
+    background-color: rgb(16, 46, 130);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 
+}
 
+.contact-section,
+.social-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.lightBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 999;
+  }
 

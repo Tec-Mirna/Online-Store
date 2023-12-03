@@ -160,15 +160,6 @@ document.querySelector('#app').innerHTML = `
 
 
 
-
-
-
-
-
-
-
-
-
 `
 
 
@@ -182,10 +173,10 @@ document.querySelector('#app').innerHTML = `
 }
 //Inicio de sesión
 
-document.getElementById('showLoginForm').addEventListener('click', function() {
+/* document.getElementById('showLoginForm').addEventListener('click', function() {
   var loginForm = document.getElementById('loginForm');
   loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
-});
+}); */
 
 
 
@@ -270,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let body = document.body
 
         if(darkMode){
-            button.innerHTML = "Modo Oscuro"
+            button.innerHTML = "Modo Oscuro🐦"
             button.classList.replace('btn-light', 'btn-dark');
             body.style.backgroundColor = '#FFFFFF'
         }else{
