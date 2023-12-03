@@ -158,7 +158,32 @@ document.querySelector('#app').innerHTML = `
 </section>
 
 
+
+
+
+
+
+
+
+
+
 `
+
+
+ //Función para cambiar el texto y el color al boton al hacer clic
+ function changeButton(button, added) {
+ 
+  button.innerHTML = added ? "Añadido al carrito" : "Añadir al carrito"
+  button.classList.toggle('btn-outline-success', !added);
+  button.classList.toggle('btn-danger', added);
+     
+}
+//Inicio de sesión
+
+document.getElementById('showLoginForm').addEventListener('click', function() {
+  var loginForm = document.getElementById('loginForm');
+  loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+});
 
 
 
@@ -208,16 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             })
         });
-        //Función para cambiar el texto y el color al boton al hacer clic
-        function changeButton(button, added) {
- 
-           button.innerHTML = added ? "Añadido al carrito" : "Añadir al carrito"
-           button.classList.toggle('btn-outline-success', !added);
-           button.classList.toggle('btn-danger', added);
-              
-        }
 
     });
-      
-  
-  
+
+
