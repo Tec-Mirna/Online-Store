@@ -2,10 +2,48 @@
 
 
 document.querySelector('#app').innerHTML = `
+<header class="todo-header">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="logo" href="#">TECno-PcMania</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ofertas 🔥</a>
+        </li>
+        <li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordenadores 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+            <li><a class="dropdown-item" href="#">HP</a></li>
+            <li><a class="dropdown-item" href="#">Samsung</a></li>
+            <li><a class="dropdown-item" href="#">Asus</a></li>
+            <li><a class="dropdown-item" href="#">Accer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Otras MARCAS</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="boton-header" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
 <div class="container" id="container">
-
-
-
 
 <section class="card mb-11 mx-auto" style="max-width: 800px;">
   <div class="row">
@@ -261,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let body = document.body
 
         if(darkMode){
-            button.innerHTML = "Modo Oscuro🐦"
+            button.innerHTML = "Modo Oscuro"
             button.classList.replace('btn-light', 'btn-dark');
             body.style.backgroundColor = '#FFFFFF'
         }else{
